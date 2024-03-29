@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <!-- 폰트어썸 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <main>
+    <!-- intro -->
+    <section id="section1">
+      <header class="header">
+        <div class="header__logo">
+          <a class="name" href="#section1">SEONGHO<br>
+            <p>PORTPOLIO</p>
+          </a> 
+        </div>
+        <nav>
+          <a href="#section1" class="nav_hover active">INTRO</a>
+          <a href="#section2" class="nav_hover">ABOUT</a>
+          <a href="#section3" class="nav_hover">SKILL</a>
+          <a href="#section4" class="nav_hover">PROJECT</a>
+          <a href="#section5" class="nav_hover">CONTACT</a>
+        </nav>
+      </header>
+      <div class="intro_main">
+        <div class="intro__col intro__col--1">
+          <div class="intro_wrap">
+            <div class="intro_left">
+              <h1>
+                PORTFOLIO <br>
+                <span>SEONGHO</span>
+              </h1>
+              <div class="intro_btns">
+                <a href="#none" class="intro_mail">glgl3972@naver.com</a>
+                <a href="https://github.com/goseongho" class="intro_github" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
+              </div>
+            </div>
+            <div class="intro_right">
+              <img src="images/intro/intro_main01.png" alt="인트로이미지">
+              <div class="intro_object">
+                <img src="images/intro/object01.png" class="object01" alt="인트로이미지">
+                <img src="images/intro/object02.png" class="object02" alt="인트로이미지">
+                <img src="images/intro/object03.png" class="object03" alt="인트로이미지">
+              </div>
+            </div>
+          </div>
+          <div class="scroll">
+            <p>SCROLL DOWN</p>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="section2">
+      <div class="about">
+        <div class="about_title">
+          <h2>ABOUT</h2>
+        </div>
+        <div class="about_inner">
+          <div class="about_left">
+            <img src="images/about/about_img.png" alt="모니터이미지">
+            <div class="text_box">
+              <div class="about_text">
+                <div id="textContainer"></div>
+              </div>
+            </div>
+          </div>
+          <div class="about_right">
+            <h5>
+              " 꾸준한 성장을 모토로
+              새로운 도전을 두려워하지 않고, 배움을 멈추지 않습니다. "
+            </h5>
+            <p>
+              - 저는 끊임없이 스스로를 발전시키고 배움을 멈추지 않는것이 삶의 큰 목표입니다. <br><br>
+              - 성취하고자 하는 목표가 있을때 누군가 닦아놓은 쉬운 길보다 스스로 주도적인 방법으로 달성했을때 성취감을 얻는 사람입니다. <br><br>
+              <!-- - 지식의 공유에 열려있어 자신이 익히고 깨우친 정보를 자유롭게 공유하는 개발문화가 저에게 긍정적으로 다가왔습니다. <br><br> -->
+              - 현실에 안주하지 않고 배움을 멈추지 않으며 동료들과 지식을 공유하며 공동의 목표를 달성하는 협업이 즐겁습니다. <br><br> 
+              - 저의 이러한 성향이 개발자 직무와 적합하다고 생각합니다.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill -->
+    <section id="section3">
+      <div class="skill_title">
+        <h2>SKILL</h2>
+        <p>아이콘을 클릭하면 자세한 설명이 나옵니다.</p>
+      </div>
+      <div class="card">
+        <div class="card_inner">
+          <div class="card_img">
+            <div class="card_item" onclick="showPopup('HTML')">
+              <!-- 클릭 시 HTML 팝업 열기 -->
+              <img src="images/skill/skill_html.png" alt="html">
+              <p>HTML</p>
+            </div>
+            <div class="card_item" onclick="showPopup('CSS')">
+              <!-- 클릭 시 CSS 팝업 열기 -->
+              <img src="images/skill/skill_css.png" alt="css">
+              <p>CSS</p>
+            </div>
+            <div class="card_item" onclick="showPopup('Sass')">
+              <!-- 클릭 시 Sass 팝업 열기 -->
+              <img src="images/skill/skill_scss.png" 
+              class="sass"
+              alt="scss">
+              <p>SCSS</p>
+            </div>
+            <div class="card_item" onclick="showPopup('JavaScript')">
+              <!-- 클릭 시 JavaScript 팝업 열기 -->
+              <img src="images/skill/skill_javascript.png" alt="javascript">
+              <p class="java_text">JavaScript</p>
+            </div>
+            <div class="card_item" onclick="showPopup('jQuery')">
+              <!-- 클릭 시 jQuery 팝업 열기 -->
+              <img src="images/skill/skill_jqurey.png" alt="jquery">
+              <p>jQuery</p>
+            </div>
+            <div class="card_item" onclick="showPopup('React')">
+              <!-- 클릭 시 React 팝업 열기 -->
+              <img src="images/skill/skill_react.png" alt="react">
+              <p>React</p>
+            </div>
+            <div class="card_item" onclick="showPopup('Figma')">
+              <!-- 클릭 시 Figma 팝업 열기 -->
+              <img src="images/skill/skill_figma.png" alt="figma" class="figma"
+              >
+              <p>Figma</p>
+            </div>
+            <div class="card_item" onclick="showPopup('Github')">
+              <!-- 클릭 시 Figma 팝업 열기 -->
+              <img src="images/skill/skill_github.png"
+              alt="github">
+              <p>GitHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop">
+         <!-- HTML 팝업 창 -->
+        <div id="popupHTML" class="popup" onclick="closePopup('popupHTML')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupHTML')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_html.png" alt="detail_html" class="detail_img">
+            <h3>HTML</h3>
+            <p>
+              1. 웹 접근성과 웹 표준성을 준수하며 웹표준을 위해 HTML에서 권장하는 시멘틱태그를 이용해 전체 레이아웃을설계 할 수 있습니다. <br><br>
+              2. 특히, 웹사이트를 퍼블리싱 하기 전에 ‘기획서와 디자인 가이드를’를 만들고 기능 기획서에 있는 전	제적인 폰트 서식, 컬러 가이드, 사이즈 정보, 상호작용 여부, HTML 와이어프레임까지 꼼꼼하게 미리 정리해 놓고 체계적인 퍼블리싱 작업을 수행합니다.
+            </p>
+          </div>
+        </div>
+        <!-- CSS 팝업 창 -->
+        <div id="popupCSS" class="popup" onclick="closePopup('popupCSS')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupCSS')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_css.png" alt="detail_css" class="detail_img">
+            <h3>CSS</h3>
+            <p>
+              1. 제가 디자인한 것을 완벽하게 구현할 수 있는 능력을 보유하고 있습니다. <br><br>
+              2. 디자이너와의 원활한 소통을 통해 시각적 디자인을 코드로 정확하게 전환할 수 있으며, 풍부한 경험을 통해 브라우저 간의 차이를 극복하고 일관된 디자인을 제공합니다. <br><br>
+              3. 이를 통해 사용자들이 다양한 환경에서 동일한 품질의 경험을 누릴 수 있도록 항상 노력하고 있습니	다.
+            </p>
+          </div>
+        </div>
+        <!-- Sass 팝업 창 -->
+        <div id="popupSass" class="popup" onclick="closePopup('popupSass')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupSass')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_scss.png" alt="detail_scss" class="detail_img">
+            <h3>Sass</h3>
+            <p>
+              1. SCSS의 문법과 모듈화를 잘 활용하여 스타일 작업을 원활히 할 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <!-- JavaScript 팝업 창 -->
+        <div id="popupJavaScript" class="popup" onclick="closePopup('popupJavaScript')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupJavaScript')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_javascript.png" alt="detail_javascript" class="detail_img">
+            <h3>JavaScript</h3>
+            <p>
+              1. 내비게이션, 탭 메뉴, 아코디언 등의 상호작용을 구현하기 위해 자바스크립트를 사용합니다. <br><br>
+              2. 플러그인 의존 없이 순수한 자바스크립트 코딩을 통해 프로젝트에 필요한 기능들을 정확하게 구현합니다. <br><br>
+              3. 자바스크립트의 핵심 개념과 문법에 대한 깊은 이해를 바탕으로 복잡한 웹 상호작용을 구현합니다.
+            </p>
+          </div>
+        </div>
+        <!-- jQuery 팝업 창 -->
+        <div id="popupjQuery" class="popup" onclick="closePopup('popupjQuery')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupjQuery')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_jqurey.png" alt="detail_jquery" class="detail_img">
+            <h3>jQuery</h3>
+            <p>
+              1. 관련 라이브러리와 애니메이션, 여러 메소드들을 잘 활용할 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <!-- React 팝업 창 -->
+        <div id="popupReact" class="popup" onclick="closePopup('popupReact')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupReact')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_react.png" alt="detail_react" class="detail_img">
+            <h3>React</h3>
+            <p>
+              1. React 컴포넌트를 작성하고, 상태(state)와 속성(props)을 관리할 수 있습니다. 라우팅을 구현하고 상태 관리를 통해 컴포넌트 간 데이터를 공유하고 전달할 수 있습니다. <br><br>
+              2. 프로젝트에서 React를 활용하여 사용자 인터페이스를 구축하고, 컴포넌트를 제작해 재사용 가능한 구성 요소를 개발한 경험이 있습니다.
+            </p>
+          </div>
+       </div>
+        <!-- Figma 팝업 창 -->
+        <div id="popupFigma" class="popup" onclick="closePopup('popupFigma')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupFigma')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_figma.png" alt="detail_figma"class="detail_img figma">
+            <h3>Figma</h3>
+            <p>
+              1. 피그마를 통한 디자인, 프로토타이핑, 협업 등의 다양한 기능을 숙련도 있게 활용합니다. <br><br>
+              2. 디자인 파일의 공유, 버전 관리, 피드백 수렴 등을 체계적으로 진행하여 효율적인 협업을 구축합니다.
+            </p>
+          </div>
+        </div>
+        <!-- Github 팝업 창 -->
+        <div id="popupGithub" class="popup" onclick="closePopup('popupGithub')">
+          <div class="popup-content">
+            <div class="popup_back">
+              <img src="images/skill/popup_back.png" alt="popup_detail">
+              <span>a</span>
+            </div>
+            <span class="close" onclick="closePopup('popupGithub')">
+              <i class="fa-regular fa-rectangle-xmark"></i>
+            </span>
+            <img src="images/skill/skill_github.png" alt="detail_github" class="detail_img">
+            <h3>GitHub</h3>
+            <p>
+              1. GitHub를 통해 프로젝트를 호스팅하고 협업했던 경험이 있습니다. <br><br>
+              2. commit, push, pull, clone 등 git 명령어를 사용하여 레파지토리에 접근할 수 있습니다. <br><br>
+              3. 커밋 메시지를 명확하게 작성하여 프로젝트 히스토리를 관리하고 다른 개발자와의 원활한 협업을 지원합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- project -->
+    <section id="section4">
+      <div class="project_title">
+        <h2>PROJECT</h2>
+      </div>
+      <div class="project_inner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/portfolio_res.PNG" class="response_img">
+                    </div>
+                    <img src="images/project/portfolio_phone.svg" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>PORTFOLIO</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    JavaScript, SCSS를 활용하여 제작되었습니다. 이 작품은 사용자 인터페이스 및 사용자 경험을 중점적으로 고려하여 디자인 되었습니다. <br> 또한, 시각적인 부분에도 심혈을 기울여 사용자가 보다 즐겁고 효울적으로 내용을 탐색할 수 있도록 고안 되었습니다.
+                    이 웹사이트는 반응형으로 디자인되어 다양한 디바이스 및 화면 크기에서 원활하게 이용할 수 있습니다. 사용자들의 다양한 환경에서 편리한 접근성을 제공하기 위해 최선을 다했습니다
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#SCSS</a>
+                  <a href="#none">#JavaScript</a>
+                  <a href="#none">#swiper.js</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/knps/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/knps" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/knps_res.png" class="response_img">
+                    </div>
+                    <img src="images/project/knps_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h4>국립공원공단 리뉴얼</h4>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    국립공원공단의 웹사이트를 리뉴얼 했습니다. 이 프로젝트에서는 전국의 국립공원에 대한 포괄적인 정보를 제공하고, 안내 기능과 등산 코스 확인, 실시간 탐방 제한 지역 및 예약 기능 등 국립공원공단이 운영하는 다양한 서비스를 효과적으로 통합했습니다. <br>
+                    기존의 홈페이지에서는 메인 슬라이드 영역과 작은 슬라이드 영역이 중복되어 있어 사용자 경험이 불편했습니다. 이제 두 영역을 통합하여 더욱 직관적이고 효율적인 슬라이드로 재구성하였습니다. 이를통해 사용자들에게 전문적이고 효율적인 웹사이트를 경험할 수 있도록 했습니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#JavaScript</a>
+                  <a href="#none">#swiper.js</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/knps/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/knps" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/benz_res.PNG" class="response_img">
+                    </div>
+                    <img src="images/project/benz_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>Mercedes-Benz-Certified</h3>
+                  <p>팀프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    총 3명이 진행한 벤츠 인증중고차 웹사이트 리뉴얼 팀 프로젝트입니다.
+                    Figma로 웹사이트 디자인 수정을 통해 타 사이트 대비 부족한 컨텐츠, 단순한 레이아웃 구성을 보완하여 퍼블리싱 하였습니다.
+                    정적인 웹사이트를 동적인 시각적인 요소를 추가하고 기존 서브페이지 안에 있는 콘텐츠를 메인으로 이동하여, 사용자가 다양한 정보를 한눈에 볼 수 있습니다
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#SCSS</a>
+                  <a href="#none">#JavaScript</a>
+                  <a href="#none">#swiper.js</a>
+                  <a href="#none">#반응형웹</a>
+                  <a href="#none">#map.api</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/Mercedes-Benz-Certified/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/Mercedes-Benz-Certified" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/mardi_res.PNG" class="response_img">
+                    </div>
+                    <img src="images/project/mardi_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>Mardi Mercredi</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    마르디메크르디 프로젝트를 리액트로 진행 했습니다.
+                    전체 상품 목록을 볼 수 있고 로그인을 통해 인증된 사용자만 상세 페이지에 접근할 수 있습니다.
+                    검색 기능을 통해 원하는 상품을 찾을 수 있습니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#React</a>
+                  <a href="#none">#swiper.js</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://gleeful-buttercream-68eddd.netlify.app/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/mardimercredi" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/rock_res.png" class="response_img" >
+                    </div>
+                    <img src="images/project/rock_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>rock-scissor-paper</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    이 프로젝트는 React를 사용하여 개발한 가위 바위 보 게임입니다.
+                    사용자는 컴퓨터와 대결하여 가위, 바위, 보 중 하나를 선택하여 게임을 진행할 수 있고 
+                    게임 내에서 가위, 바위, 보 아이콘을 표시하기 위해 React Icons 라이브러리를 활용했습니다. 이 라이브러리는 다양한 아이콘을 제공하며, 쉽게 사용할 수 있습니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#React</a>
+                  <a href="#none">#React Icons</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/rock-scissor-paper/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/rock-scissor-paper" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/weather_res.PNG" class="response_img">
+                    </div>
+                    <img src="images/project/weather_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>Weather-API</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    React를 사용한 간단한 날씨 앱입니다. OpenWeatherMap API를 통해 실시간 날씨 정보를 가져오며, 현재 위치 또는 미리 정의된 도시에서 날씨를 확인할 수 있습니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#React</a>
+                  <a href="#none">#OpenWeatherMap API</a>
+                  <a href="#none">#react-spinners</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://exquisite-chebakia-0cb9c3.netlify.app/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/weatherapi" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/class101_res.jpg" class="response_img">
+                    </div>
+                    <img src="images/project/class101_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>Class101</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    Slick Slider + jQuery를 사용하여 작업한 class101 입니다.
+                    반응형웹으로 만들어져 모든 환경에서 사용가능합니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#JQuery</a>
+                  <a href="#none">#Slick Slider</a>
+                  <a href="#none">#CloneCoding</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/class101/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/class101" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/homecheck_res.png" class="response_img">
+                    </div>
+                    <img src="images/project/homecheck_phone.PNG" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>HomeCheck</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    교육과정중 소홀히 했던 Front End 에 대한 공부를 위해 한 프로젝트이고, 단순한 html5 css js에 대한 복습부터 자주사용하는 javascript library들에대한 학습을 진행하였습니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#Publishing</a>
+                  <a href="#none">#CloneCoding</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/home-check/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/home-check" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/netflix_res.PNG" class="response_img">
+                    </div>
+                    <img src="images/project/netflix_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>NETFLIX</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    netflix 홈페이지를 퍼블리싱 연습 목적으로 클론코딩 해봤습니다. 기존 홈페이지의 마크업 구조를 좀 더 보완하였습 니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#Publishing</a>
+                  <a href="#none">#CloneCoding</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/netflix/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/netflix" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project_img">
+                <a href="#none">
+                  <div class="project">
+                    <div class="wrapper">
+                      <img src="images/project/outdoor_res.PNG" class="response_img">
+                    </div>
+                    <img src="images/project/outdoor_phone.png" class="character" />
+                  </div>
+                </a>
+              </div>
+              <div class="project_text">
+                <div class="project_name">
+                  <h3>OUTDOOR</h3>
+                  <p>개인프로젝트</p>
+                </div>
+                <div class="project_detail">
+                  <p>
+                    이 사이트는 코딩 연습을 위해 제작된 'OUTDOOR' 클론 홈페이지입니다.
+                  </p>
+                </div>
+                <div class="project_skill">
+                  <a href="#none">#Publishing</a>
+                  <a href="#none">#CloneCoding</a>
+                  <a href="#none">#반응형웹</a>
+                </div>
+                <div class="project_btn">
+                  <div class="site">
+                    <a href="https://goseongho.github.io/outdoor/" target="_blank"><i class="fa-solid fa-share-from-square"></i>사이트 바로가기</a>
+                  </div>
+                  <div class="github">
+                    <a href="https://github.com/goseongho/outdoor" class="github" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper_pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="section5">
+      <div class="contact">
+          <div class="contact_inner">
+              <div class="contact_title">
+                <h2>CONTACT</h2>
+              </div>
+             <div class="contact_wrap">
+              <div class="contact_left">
+                <form
+                action="https://formspree.io/f/mleqwnbo"
+                method="POST"
+                >
+                  <label>
+                    <span>Name</span> 
+                    <input type="text" name="text" class="name">
+                  </label>
+                  <label>
+                    <span>Mail</span>
+                    <input type="email" name="email" class="name">
+                  </label>
+                  <label>
+                    <span>Message</span>
+                    <textarea name="message"></textarea>
+                  </label>
+                <button type="submit">SEND MAIL</button>
+                </form>
+              </div>
+              <div class="contact_right">
+                <div class="contact_phone contact_icon">
+                  <img src="images/contact/Asset 4.svg" alt="전화기아이콘">
+                  <span>PHONE</span>
+                  <a>010-4816-3972</a>
+                </div>
+                <div class="contact_email contact_icon">
+                  <img src="images/contact/Asset 2.svg" alt="이메일아이콘">
+                  <span>E-MAIL</span>
+                  <a>glgl3972@naver.com</a>
+                </div>
+                <div class="contact_github contact_icon">
+                  <img src="images/contact/Asset 3.svg" alt="깃허브아이콘">
+                  <span>GITHUB</span>
+                  <a href="https://github.com/goseongho">https://github.com/goseongho</a>
+                </div>
+              </div>
+             </div>
+          </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/skill.js"></script>
+</body>
+</html>

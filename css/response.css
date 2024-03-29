@@ -1,0 +1,396 @@
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/HSBomBaram/HSBomBaram3.css");
+@import url("https://webfontworld.github.io/TheJamsil/TheJamsil.css");
+@import url("https://fonts.googleapis.com/css2?family=Kings&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+@media screen and (max-width: 1280px) {
+  section {
+    width: 1280px;
+  }
+}
+@media screen and (max-width: 390px) {
+  h2 {
+    font-size: 1.7rem !important;
+    color: #DDAEEA;
+    font-weight: bold;
+    padding-top: 5.5rem !important;
+    font-family: "Inclusive Sans";
+  }
+  section {
+    width: 100%;
+  }
+  #section1 .intro {
+    width: 100%;
+  }
+  #section1 .intro .tigerWrap {
+    top: 150px !important;
+  }
+  @keyframes tiger {
+    0% {
+      transform: translatex(0px);
+      top: 230px;
+    }
+    100% {
+      transform: translatex(-220px);
+      top: 280px;
+    }
+  }
+  #section1 .intro__title {
+    display: none;
+  }
+  #section1 .header .name {
+    display: none !important;
+  }
+  #section1 .header nav {
+    gap: 1rem !important;
+  }
+  #section1 .header nav a {
+    font-size: 1rem !important;
+  }
+  #section1 .intro_main {
+    width: 100% !important;
+  }
+  #section1 .intro_main .intro_wrap {
+    padding-top: 5rem;
+    width: 90% !important;
+    margin: auto !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_left {
+    padding-top: 5rem !important;
+    width: 50% !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_left h1 {
+    font-size: 2.2rem !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_left .intro_btns {
+    padding-top: 9rem !important;
+    padding-left: 2.3rem;
+    font-size: 0.7rem !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_left .intro_btns .intro_mail {
+    padding: 1rem 1rem !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_left .intro_btns .intro_github {
+    color: #85b8b1;
+    display: flex;
+    border: 1px solid #444e5b;
+    padding: 0.7rem 1rem !important;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  #section1 .intro_main .intro_wrap .intro_left .intro_btns .intro_github i {
+    font-size: 0.9rem !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_right {
+    padding-top: 2rem !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_right img {
+    width: 150px !important;
+    height: 160px !important;
+  }
+  #section1 .intro_main .intro_wrap .intro_right .intro_object {
+    display: none;
+  }
+  #section1 .intro_main .scroll {
+    margin: 80px auto !important;
+  }
+  #section2 .about_inner {
+    height: 100% !important;
+    width: 99% !important;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  #section2 .about_inner .about_left {
+    width: 60% !important;
+  }
+  #section2 .about_inner .about_left img {
+    width: 120% !important;
+    right: 30px !important;
+  }
+  #section2 .about_inner .about_left .text_box {
+    width: 100%;
+  }
+  #section2 .about_inner .about_left .text_box .about_text {
+    width: 40% !important;
+    bottom: -26rem !important;
+    left: 7.4rem !important;
+  }
+  #section2 .about_inner .about_left .text_box .about_text #textContainer {
+    font-size: 0.9rem !important;
+    line-height: 1.8rem !important;
+  }
+  #section2 .about_inner .about_right {
+    width: 94%;
+    padding-left: 0px !important;
+    padding-top: 2rem;
+  }
+  #section2 .about_inner .about_right h5 {
+    font-size: 1.2rem !important;
+    line-height: 1.9rem !important;
+  }
+  #section2 .about_inner .about_right h5::before {
+    height: 2px !important;
+  }
+  #section2 .about_inner .about_right p {
+    line-height: 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  #section3 {
+    width: 100% !important;
+  }
+  #section3 .skill_title {
+    padding-top: 0rem !important;
+    top: 0px !important;
+  }
+  #section3 .card {
+    width: 100% !important;
+  }
+  #section3 .card .card_inner {
+    height: 200px !important;
+    padding-top: 0rem !important;
+  }
+  #section3 .card .card_inner .card_img {
+    top: 320px !important;
+    left: 210px !important;
+    width: 30% !important;
+    grid-template-columns: auto auto !important;
+    grid-row-gap: 0rem !important;
+    grid-column-gap: 0rem !important;
+  }
+  #section3 .card .card_inner .card_img .card_item {
+    width: 25% !important;
+    height: 38% !important;
+    gap: 1.4rem !important;
+    position: relative;
+  }
+  #section3 .card .card_inner .card_img .card_item img {
+    width: 95%;
+  }
+  #section3 .card .card_inner .card_img .card_item .java_text {
+    position: absolute;
+    top: 5.8rem;
+    right: 2.2rem;
+  }
+  #section3 .card .card_inner .card_img .card_item p {
+    font-size: 0.8rem !important;
+  }
+  #section3 .card .card_inner .card_img .card_item .sass {
+    width: 90% !important;
+  }
+  #section3 .card .card_inner .card_img .card_item .figma {
+    width: 50% !important;
+    height: 50px !important;
+  }
+  #section3 .pop .popup {
+    top: 444px !important;
+    width: 88% !important;
+    height: 70% !important;
+  }
+  #section3 .pop .popup .popup-content .detail_img {
+    width: 15%;
+    padding-top: 5rem !important;
+  }
+  #section3 .pop .popup .popup-content .figma {
+    width: 15% !important;
+  }
+  #section3 .pop .popup .popup-content p {
+    width: 100% !important;
+    padding-top: 3rem !important;
+  }
+  #section4 .project_title {
+    top: -40px !important;
+  }
+  #section4 .project_inner {
+    height: 100%;
+  }
+  #section4 .project_inner .swiper-slide {
+    width: 32% !important;
+    padding-top: 0rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_img a {
+    width: 100% !important;
+  }
+  #section4 .project_inner .swiper-slide .project_img a .project {
+    width: 100% !important;
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+  }
+  #section4 .project_inner .swiper-slide .project_img a .response_img {
+    display: block !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 210px !important;
+  }
+  #section4 .project_inner .swiper-slide .project_img a .character {
+    width: 40% !important;
+    height: 250px !important;
+    top: 54px !important;
+    right: 0 !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text {
+    height: 300px !important;
+    width: 94.5% !important;
+    margin: auto !important;
+    margin: 45px auto !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_name h3 {
+    font-size: 1.3rem !important;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-family: "Inclusive Sans";
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_name p {
+    padding-top: 0.3rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_detail {
+    line-height: 1.2rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_detail p {
+    font-size: 0.8rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_skill {
+    display: flex !important;
+    flex-wrap: wrap;
+    padding-top: 1rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_skill a {
+    font-size: 0.55rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_btn {
+    padding-top: 1rem !important;
+    font-size: 0.8rem !important;
+    display: flex;
+    gap: 0.7rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_btn .site {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #2a2a6e;
+    font-weight: 500;
+    padding: 0rem 0.8rem !important;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_btn .site a {
+    color: #fff;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_btn .site i {
+    padding-right: 0.4rem;
+    font-size: 1rem;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_btn .github {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-weight: 600;
+    background-color: #fff;
+    font-family: "Inclusive Sans";
+    padding: 0rem 0.8rem;
+  }
+  #section4 .project_inner .swiper-slide .project_text .project_btn .github i {
+    font-size: 1.5rem;
+    padding-right: 0.4rem;
+  }
+  #section4 .project_inner .swiper-button-next {
+    top: 15rem !important;
+    left: 19rem !important;
+  }
+  #section4 .project_inner .swiper-button-prev {
+    top: 15rem !important;
+    left: 3rem !important;
+  }
+  #section5 {
+    width: 100% !important;
+  }
+  #section5 .contact_inner {
+    width: 100%;
+  }
+  #section5 .contact_inner .contact_title {
+    width: 100% !important;
+    top: -20px !important;
+  }
+  #section5 .contact_inner .contact_wrap {
+    flex-direction: column-reverse;
+    padding-top: 0rem !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_left {
+    width: 90% !important;
+    margin: 20px auto;
+    height: 100% !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_left form {
+    width: 80% !important;
+    line-height: 1rem !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_left form label {
+    padding-top: 1rem !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_left form label span {
+    font-size: 0.8rem;
+  }
+  #section5 .contact_inner .contact_wrap .contact_left form button {
+    width: 30% !important;
+    font-size: 0.67rem !important;
+    margin: 10px auto !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_left form textarea {
+    height: 30% !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_right {
+    width: 99% !important;
+    margin: auto !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_right .contact_icon {
+    padding-top: 1.2rem !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_right .contact_icon a {
+    font-size: 1rem !important;
+  }
+  #section5 .contact_inner .contact_wrap .contact_right .contact_icon img {
+    width: 10% !important;
+  }
+}
